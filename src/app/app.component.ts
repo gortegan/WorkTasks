@@ -1,3 +1,4 @@
+import { LogoutPage } from './../pages/logout/logout';
 import { UserPage } from './../pages/private/user/user';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -17,7 +18,6 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
-
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
@@ -29,9 +29,15 @@ export class MyApp {
       { title: 'Settings', component: SettingsPage },
       { title: 'Worker', component: WorkerPage },
       { title: 'Create worker', component: NewworkerPage },
-      { title: 'List workers', component: ListworkersPage }
+      { title: 'List workers', component: ListworkersPage },
+      { title: 'Logout', component: LogoutPage}
+
     ];
 
+  }
+
+  logout() {
+    this.rootPage = HomePage;
   }
 
   initializeApp() {

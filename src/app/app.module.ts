@@ -13,6 +13,7 @@ import { UserPage } from '../pages/private/user/user';
 import { SettingsPage } from '../pages/private/settings/settings';
 import { WorkerPage } from '../pages/private/worker/worker';
 import { ListworkersPage } from '../pages/private/listworkers/listworkers';
+import { LogoutPage } from '../pages/logout/logout';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ListworkersPage } from '../pages/private/listworkers/listworkers';
     SettingsPage,
     NewworkerPage,
     WorkerPage,
-    ListworkersPage
+    ListworkersPage,
+    LogoutPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { ListworkersPage } from '../pages/private/listworkers/listworkers';
     SettingsPage,
     NewworkerPage,
     WorkerPage,
-    ListworkersPage
+    ListworkersPage,
+    LogoutPage
   ],
   providers: [
     StatusBar,

@@ -1,27 +1,30 @@
+import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ListworkersPage page.
+ * Generated class for the LogoutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-listworkers',
-  templateUrl: 'listworkers.html',
+  selector: 'page-logout',
+  templateUrl: 'logout.html',
 })
-export class ListworkersPage {
+export class LogoutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListworkersPage');
+    console.log('Logout');
   }
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
+
+  goHome() {
+    this.navCtrl.push(HomePage);
   }
 
 }
