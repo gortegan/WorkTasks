@@ -27,9 +27,6 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: UserPage },
       { title: 'Settings', component: SettingsPage },
-      { title: 'Worker', component: WorkerPage },
-      { title: 'Create worker', component: NewworkerPage },
-      { title: 'List workers', component: ListworkersPage },
       { title: 'Logout', component: LogoutPage}
 
     ];

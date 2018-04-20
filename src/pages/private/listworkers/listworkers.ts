@@ -1,3 +1,4 @@
+import { WorkerPage } from './../worker/worker';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -22,6 +23,7 @@ export class ListworkersPage {
   }
   itemSelected(item: string) {
     console.log("Selected Item", item);
+    this.navCtrl.push(WorkerPage);
   }
 
 }

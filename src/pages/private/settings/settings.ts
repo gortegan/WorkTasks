@@ -1,3 +1,5 @@
+import { ListworkersPage } from './../listworkers/listworkers';
+import { NewworkerPage } from './../newworker/newworker';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { UserPage } from '../user/user';
@@ -14,9 +16,11 @@ import { UserPage } from '../user/user';
   templateUrl: 'settings.html',
 })
 export class SettingsPage {
-  homePage: any;
+  createWorker: any;
+  listWorker: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.homePage = UserPage;
+    this.createWorker = NewworkerPage;
+    this.listWorker = ListworkersPage
   }
 
   ionViewDidLoad() {

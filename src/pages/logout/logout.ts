@@ -24,7 +24,7 @@ export class LogoutPage {
   }
 
   goHome() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
