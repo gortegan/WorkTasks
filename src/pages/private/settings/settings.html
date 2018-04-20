@@ -12,7 +12,16 @@
 
 <ion-content padding>
     <ion-item>
+        <ion-label>Language</ion-label>
+        <ion-select>
+            <ion-option value="en" selected="true">English</ion-option>
+            <ion-option value="es">Spanish</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
         <ion-label>Show workers</ion-label>
         <ion-toggle checked="false"></ion-toggle>
     </ion-item>
+    <button ion-button color="green" block margin-top>Manage workers</button>
+    <button ion-button color="green" block margin-top>Create worker</button>
 </ion-content>
