@@ -1,0 +1,8 @@
+{
+  "name": "WorkTasks",
+  "app_id": "757dd238",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
