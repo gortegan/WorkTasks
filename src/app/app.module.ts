@@ -14,7 +14,8 @@ import { SettingsPage } from '../pages/private/settings/settings';
 import { WorkerPage } from '../pages/private/worker/worker';
 import { ListworkersPage } from '../pages/private/listworkers/listworkers';
 import { LogoutPage } from '../pages/logout/logout';
-
+import { IonicStorageModule } from '@ionic/storage';
+import { RatingPage } from '../pages/private/rating/rating';
 @NgModule({
   declarations: [
     MyApp,
@@ -27,11 +28,13 @@ import { LogoutPage } from '../pages/logout/logout';
     NewworkerPage,
     WorkerPage,
     ListworkersPage,
-    LogoutPage
+    LogoutPage,
+    RatingPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +48,8 @@ import { LogoutPage } from '../pages/logout/logout';
     NewworkerPage,
     WorkerPage,
     ListworkersPage,
-    LogoutPage
+    LogoutPage,
+    RatingPage
   ],
   providers: [
     StatusBar,

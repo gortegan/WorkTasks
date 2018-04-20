@@ -20,7 +20,7 @@
     </ion-item>
     <ion-item>
         <ion-label>Show workers</ion-label>
-        <ion-toggle checked="false"></ion-toggle>
+        <ion-toggle checked="false" [(ngModel)]="toogle" (ionChange)="updateAvailable(toogle)"></ion-toggle>
     </ion-item>
     <button ion-button color="green" block margin-top [navPush]="listWorker">Manage workers</button>
     <button ion-button color="green" block margin-top [navPush]="createWorker">Create worker</button>

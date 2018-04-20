@@ -1,0 +1,22 @@
+<ion-header>
+
+    <ion-navbar color="green">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Rating</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+        <ion-item *ngIf="workersVisibility">
+            <ion-label>Select worker</ion-label>
+            <ion-select>
+                <ion-option>Worker 1</ion-option>
+                <ion-option>Worker 2</ion-option>
+                <ion-option>Worker 3</ion-option>
+            </ion-select>
+        </ion-item>
+</ion-content>

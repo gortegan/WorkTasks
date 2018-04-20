@@ -10,6 +10,7 @@ import { SettingsPage } from '../pages/private/settings/settings';
 import { WorkerPage } from '../pages/private/worker/worker';
 import { NewworkerPage } from '../pages/private/newworker/newworker';
 import { ListworkersPage } from '../pages/private/listworkers/listworkers';
+import { RatingPage } from '../pages/private/rating/rating';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: UserPage },
+      { title: 'Rating', component: RatingPage },
       { title: 'Settings', component: SettingsPage },
       { title: 'Logout', component: LogoutPage}
 
