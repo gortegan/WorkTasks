@@ -1,3 +1,4 @@
+import { NewworkerPage } from './../pages/private/newworker/newworker';
 import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -9,6 +10,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RegisterPage } from '../pages/register/register';
 import { UserPage } from '../pages/private/user/user';
+import { SettingsPage } from '../pages/private/settings/settings';
+import { WorkerPage } from '../pages/private/worker/worker';
+import { ListworkersPage } from '../pages/private/listworkers/listworkers';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { UserPage } from '../pages/private/user/user';
     ListPage,
     LoginPage,
     RegisterPage,
-    UserPage
+    UserPage,
+    SettingsPage,
+    NewworkerPage,
+    WorkerPage,
+    ListworkersPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +38,11 @@ import { UserPage } from '../pages/private/user/user';
     ListPage,
     LoginPage,
     RegisterPage,
-    UserPage
+    UserPage,
+    SettingsPage,
+    NewworkerPage,
+    WorkerPage,
+    ListworkersPage
   ],
   providers: [
     StatusBar,

@@ -1,10 +1,14 @@
-import { LoginPage } from './../pages/login/login';
+import { UserPage } from './../pages/private/user/user';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { SettingsPage } from '../pages/private/settings/settings';
+import { WorkerPage } from '../pages/private/worker/worker';
+import { NewworkerPage } from '../pages/private/newworker/newworker';
+import { ListworkersPage } from '../pages/private/listworkers/listworkers';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,8 +25,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Login', component: LoginPage }
+      { title: 'Home', component: UserPage },
+      { title: 'Settings', component: SettingsPage },
+      { title: 'Worker', component: WorkerPage },
+      { title: 'Create worker', component: NewworkerPage },
+      { title: 'List workers', component: ListworkersPage }
     ];
 
   }
