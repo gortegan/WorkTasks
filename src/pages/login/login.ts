@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { UserPage } from '../private/user/user';
 
 /**
  * Generated class for the LoginPage page.
@@ -19,6 +20,10 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  login() {
+    this.navCtrl.setRoot(UserPage);
   }
 
 }
